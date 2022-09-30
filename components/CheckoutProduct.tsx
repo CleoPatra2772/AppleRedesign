@@ -41,18 +41,18 @@ const CheckoutProduct = ({id, items}: Props) => {
               </p>
             </div>
   
-            <p className="flex cursor-pointer items-end text-blue-500 hover:underline">
+            <p className="flex cursor-pointer items-end text-blue-500 hover:underline text-base">
               Show product details
               <ChevronDownIcon className="h-6 w-6" />
             </p>
           </div>
           <div className="flex flex-col items-end space-y-4">
             <h4 className="text-xl font-semibold lg:text-2xl">
-            <p> $ {items.reduce((total, item) => total + item.price, 0)}</p>
+            <p > $ {items.reduce((total, item) => total + item.price, 0)}</p>
             </h4>
             <button
               onClick={removeItemFromBasket}
-              className="text-blue-500 hover:underline"
+              className="text-blue-500 hover:underline text-base"
             >
               Remove
             </button>

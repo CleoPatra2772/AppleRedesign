@@ -1,3 +1,5 @@
+
+
 interface Category {
     _id: string;
     _createdAt: string;
@@ -53,3 +55,4 @@ interface StripeProduct {
         unit_amount: number;
     }
 }
+
